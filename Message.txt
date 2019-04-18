@@ -1,4 +1,5 @@
 FROM REMOTE REPO CHANGES
+<<<<<<< HEAD
 Hello, Igor!
 I'm fine, and you?
 Thank you!
