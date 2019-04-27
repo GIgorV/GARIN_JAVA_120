@@ -3,6 +3,7 @@ class Program {
 	public static void main(String[] args) {
 	Scanner scanner = new Scanner(System.in);
 	int currentNumber = scanner.nextInt();
+	while (currentNumber != -1) {
 	int check1 = currentNumber % 2;
 	int digitSum = 0;
 	int currentDigit = 0;
@@ -28,5 +29,6 @@ class Program {
 			System.out.println(multiplication);
 		}
 	currentNumber = scanner.nextInt();
+	}
 	}
 }
