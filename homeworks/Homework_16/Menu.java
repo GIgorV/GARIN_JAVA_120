@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class Menu {
+    private int currentCommand;
+    private UsersService usersService;
+    private Scanner scanner = new Scanner(System.in);
+
+    public Menu(UsersService usersService) {
+        this.usersService = usersService;
+    }
+
+    public void showMainMenu() {
+        System.out.println("Добро пожаловать!");
+        System.out.println("1. Регистрация");
+        System.out.println("2. Просмотр всех пользователей");
+        System.out.println("3. Выход");
+        currentCommand = scanner.nextInt();
+        processCommand();
+    }
+
+    public void processCommand() {
+        if (currentCommand == 1) {
+            showRegistrationMenu();
+        } else if (currentCommand == 2) {
+            showAllUsers();
+        } else {
+            System.exit(0);
+        }
+    }
+
+    public void showRegistrationMenu() {
+        System.out.println("Введите ваше имя:");
+        String nameDriver = scanner.next();
+        System.out.println("Введите модель автомобиля:");
+        String model = scanner.next();
+        SignUpForm form = new SignUpForm(nameDriver, model);
+        usersService.signUp(form);
+        showMainMenu();
+    }
+
+    public void showAllUsers() {
+
+    }
+}

@@ -1,3 +1,5 @@
+// Сортировка выбором (Selection Sort)
+
 class Program {
 	public static void main(String[] args) {
 		int a[] = {-1, 5, -3, 20, 11, 0, 2, 6};
@@ -10,7 +12,7 @@ class Program {
 					min = a[j];
 					minIndex = j;
 				}
-			}	
+			}
 			int temp = a[i];
 			a[i] = a[minIndex];
 			a[minIndex] = temp;

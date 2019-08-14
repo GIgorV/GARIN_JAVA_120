@@ -1,6 +1,6 @@
 package ru.itis;
 
-// public class Main {
+public class Main {
 
     public static boolean isPrime(int number) {
         for (int i = 2; i * i <= number; i++) {
@@ -32,4 +32,4 @@ package ru.itis;
         System.out.println(countOfPrimesInA);
         System.out.println(countOfPrimesInB);
     }
-// }
+}
