@@ -37,6 +37,7 @@
             int sum = sum(a);
             System.out.print("Сумма чисел составит: " + sum);
 
+            System.out.println(" ");
             double average = average(a);
             System.out.println("Cреднее арифметическое массива составит: " + average);
         }
