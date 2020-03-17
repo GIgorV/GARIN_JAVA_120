@@ -1,11 +1,10 @@
-package lists;
+package array;
 
-public class IntegerArrayList {
-
+public class ArrayList {
     private int array[];
     private int count; //актуальная длина списка
 
-    IntegerArrayList(int arrayLength) {     // конструктор
+    ArrayList(int arrayLength) {     // конструктор
         this.array = new int[arrayLength];
         this.count = 0;
     }
@@ -92,3 +91,4 @@ public class IntegerArrayList {
         this.array = array_new;
     }
 }
+
